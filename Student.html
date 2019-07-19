@@ -1,0 +1,734 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" charset="utf-8" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/custom.js"></script>
+    <title>Student</title>
+</head>
+<body>
+    <div class="container padding">
+        <!--Navgation Bar-->      
+        <nav class="navbar navbar-default border" role="navigation">
+            <div class="container nav-bg">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/Logo.png" /></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav nav-item">
+                        <li><a href="Index.html">School</a></li>
+                        <li><a onclick="loadcollaboration()">Collaboration</a></li>      
+                        <li><a href="Student.html">Student</a></li>
+                       
+                    </ul>
+                    <ul class="nav navbar-nav nav-right pull-right">
+                        <li><a href="#"><img src="images/Cell.png" /></a></li>
+                        <li class="nav-items">
+                            <a href="#"><img src="images/allert.png" /><span class="badge bage-color alerts">3</span></a>
+                            <ul class="dropdown-menu" style="border:0px!important">
+                                <li>
+                                    <div>
+                                        <span style="display:inline-block; font-size:16px; padding-left:18px; padding-top:10px;">Notifications</span>
+                                    </div>
+                                    <hr>
+                                </li>
+                                
+                                <li>
+                                    <a href="#">
+                                        <div class="alt">
+
+                                            <div style="display:inline-block; padding-left:10px">
+                                                <span class="alertHead">Steering committee meeting!</span><br />
+                                                <span>Steering committee meeting got postponed to Friday</span><br />
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="alt">
+
+                                            <div style="display:inline-block; padding-left:10px">
+                                                <span class="alertHead">Steering committee meeting!</span><br />
+                                                <span>Steering committee meeting got postponed to Friday</span><br />
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="alt">
+
+                                            <div style="display:inline-block; padding-left:10px">
+                                                <span class="alertHead">Campus Visit</span><br />
+                                                <span>Foreign Education Embassy Visit this week</span><br />
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a style="display:inline-block; font-size:16px; padding:18px;">See all</a>
+                                    </div>
+                                </li>
+                                
+
+
+                            </ul>
+
+                        </li>
+                        <li class="nav-items">
+                            <a href="#"><img src="images/mail.png" /><span class="badge bage-color alerts">4</span></a>
+                            <ul class="dropdown-menu" style="border:0px!important">
+                                <li>
+                                    <a href="#">
+                                        <div class="alt">
+                                            <img src="images/allert4.png" height="50" width="50" />
+                                            <div style="display:inline-block; padding-left:10px">
+                                                <span class="alertHead">David Wickham</span><br />
+                                                <span>Inefficient: inconsistent content coverage; </span><br />
+                                                <span>10.45am</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="alt">
+                                            <img src="images/allert5.png" height="50" width="50" />
+                                            <div style="display:inline-block; padding-left:10px">
+                                                <span class="alertHead">Ashley Goolsby</span><br />
+                                                <span>Feeling little or no control over the exam situation </span><br />
+                                                <span>9.30am</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="alt">
+                                            <img src="images/allert6.png" height="50" width="50" />
+                                            <div style="display:inline-block; padding-left:10px">
+                                                <span class="alertHead">Melvin Dionne</span><br />
+                                                <span>Believe in yourself. If you prepare for the exams...</span><br />
+                                                <span>9.10am</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="alt">
+                                            <img src="images/allert2.png" height="50" width="50" />
+                                            <div style="display:inline-block; padding-left:10px">
+                                                <span class="alertHead">Elisa Bernard</span><br />
+                                                <span>Believe in yourself. If you prepare for the exams...</span><br />
+                                                <span>9.00am</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><img class="User-i" src="images/Kidprofile.png" /></li>
+                        <li class="dropdown nav-items" style="margin-top: 15px;">
+                            <span class="welcome-text">Welcome</span>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-top:0px" aria-expanded="false">Dona Garrett <b class="caret"></b></a>
+
+                            <ul class="dropdown-menu" style="border:0px!important">
+                                <li>
+                                    <a href="#"><i class="fa fa-fw fa-paint-brush"></i>Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-fw fa-shopping-cart"></i>Settings</a>
+                                </li>
+                                <li id="logout">
+                                    <a href="#"><i class="fa fa-fw fa-shopping-cart"></i>Log Out</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <script type="text/javascript">
+            document.getElementById("logout").onclick = function () {
+                location.href = "Index.html";
+            };
+        </script>
+        <!--left section-->
+        <div class="col-lg-2 col-sm-2 col-md-2 col-xs-2 left-bg leftNav">
+            <div class="row">
+                <ul class="nav row-margin">
+                    <!--<li class="li-border">
+                        <a class="nav-a" href="#"><img src="images/dashboard.png" /> <span class="nav-label nav-label-margin">Dashboards</span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a class="label-margin nav-a" href="#">- Schedules</a></li>
+                            <li><a class="label-margin nav-a" href="#">- Events</a></li>
+                            <li><a class="label-margin nav-a" href="#">- Announcements</a></li>
+                            <li><a class="label-margin nav-a" href="#">- Contacts</a></li>
+                        </ul>
+                    </li>-->
+                    <li class="li-border">
+                        <a class="nav-a" href="#"><img src="images/Book-Open.png" /> <span class="nav-label nav-label-margin">Homework</span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a class="label-margin nav-a" href="#">- Algebra</a></li>
+                            <li><a class="label-margin nav-a" href="#">- Art</a></li>
+                            <li><a class="label-margin nav-a" href="#">- Biology</a></li>
+                            <li><a class="label-margin nav-a" href="#">- Chemistry</a></li>
+                            <li><a class="label-margin nav-a" href="#">- Modern WH</a></li>
+                            <li><a class="label-margin nav-a " href="#">- 3D Design</a></li>
+                        </ul>
+                    </li>
+                    <li class="li-border li-height">
+                        <a class="nav-a" href="#"><img class="img-center" src="images/Fileedit.png" /> <span class="nav-label nav-label-margin">Class Note Book</span></a>
+                    </li>
+                    <li class="li-border li-height">
+                        <a class="nav-a" href="#"><img class="img-center" src="images/mail-orenge.png" /> <span class="nav-label nav-label-margin">Mail box</span></a>
+                    </li>
+                    <li class="li-border li-height">
+                        <a class="nav-a" href="#"><img class="img-center" src="images/Cake.png" style="padding-bottom:7px" /> <span class="nav-label nav-label-margin">Birthdays</span></a>
+                    </li>
+                    <li class="li-border li-height">
+                        <a class="nav-a" href="#"><img class="img-center" src="images/schoolDir.png" style="padding-bottom:7px" /> <span class="nav-label nav-label-margin">School Directory
+</span></a>
+                    </li>
+                    <li class="li-border li-height">
+                        <a class="nav-a" href="#"><img class="img-center" src="images/districtDir.png" style="padding-bottom:7px" /> <span class="nav-label nav-label-margin">District Directory
+</span></a>
+                    </li>
+                    <li class="li-border li-height">
+                        <a class="nav-a" href="#"><img class="img-center" src="images/feedback.png" style="padding-bottom:7px" /> <span class="nav-label nav-label-margin">Feedback
+</span></a>
+                    </li>
+                    <li class="li-border li-height">
+                        <a class="nav-a" href="#"><img class="img-center" src="images/userGuide.png" style="padding-bottom:7px" /> <span class="nav-label nav-label-margin">User Guide
+</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!--main contain section-->
+        <div class="r-bg-adj clearfix">
+            <div class="col-lg-10 col-sm-10 col-md-10 col-xs-10">
+                <div class="row">
+                    <div class="search-bar">
+                        <div class="col-lg-7 col-sm-7 col-md-7 col-xs-7 nav-li">
+                            <img src="images/home.png" /><a>Home</a><img class="center-img" src="images/arrow.png" /><a>Student</a>
+                        </div>
+                        <div class="col-lg-5 col-sm-5 col-md-5 col-xs-5 pull-right" style="padding-top:3px">
+                            <div class="input-group stylish-input-group ">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <span class="input-group-addon">
+                                    <button type="submit">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--middle section-->
+                    <div class="col-lg-9 col-sm-9 col-md-9 col-xs-9">
+                        <h3 class="header">Dona Garrett</h3>
+                        <div class="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="active">
+                                    <a href="#classoverview" role="tab" data-toggle="tab">
+                                        Class Overview
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#Grades" role="tab" data-toggle="tab">
+                                        Grades
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content bottem-border">
+                                <div class="tab-pane fade active in" id="classoverview">
+                                    <div>
+                                        <div style="padding-top:10px; margin-bottom:10px">
+                                            <img class="img-bottem" src="images/previous-next.png" /><span class="date">March 05, 2015 </span>
+                                        </div>
+                                        <table id="example" class="table table-striped table-list cellspacing=" 0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Timings</th>
+                                                    <th>Mon</th>
+                                                    <th>The</th>
+                                                    <th>Wed</th>
+                                                    <th>Thu</th>
+                                                    <th>Fri</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>8:00AM - 8:50AM</td>
+                                                    <td>Three-Dimensional Design</td>
+                                                    <td>Three-Dimensional Design</td>
+                                                    <td>Modern World History</td>
+                                                    <td>Three-Dimensional Design</td>
+                                                    <td>Biology</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>8:55AM - 9:45AM</td>
+                                                    <td>Algebra</td>
+                                                    <td>Chemistry</td>
+                                                    <td></td>
+                                                    <td>Biology</td>
+                                                    <td>Modern World History</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>9:50AM - 10:40AM</td>
+                                                    <td>Modern World History</td>
+                                                    <td>Modern World History</td>
+                                                    <td>Modern World History</td>
+                                                    <td>Modern World History</td>
+                                                    <td>Three-Dimensional Design</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10:45AM - 11:35AM</td>
+                                                    <td>Chemistry</td>
+                                                    <td>Algebra</td>
+                                                    <td>Chemistry</td>
+                                                    <td>Algebra</td>
+                                                    <td>Algebra</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:35AM - 12:35PM</td>
+                                                    <td>Art</td>
+                                                    <td>Biology</td>
+                                                    <td>Algebra</td>
+                                                    <td>English</td>
+                                                    <td>Chemistry</td>
+
+                                                </tr>
+
+                                                <tr>
+                                                    <td>12:35PM - 13:25PM</td>
+                                                    <td>Lunch</td>
+                                                    <td>Lunch</td>
+                                                    <td>Lunch</td>
+                                                    <td>Lunch</td>
+                                                    <td>Lunch</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>13:30PM - 14:20PM</td>
+                                                    <td>English</td>
+                                                    <td>Art</td>
+                                                    <td>Art</td>
+                                                    <td>Art</td>
+                                                    <td>Art</td>
+
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade " id="Grades" style="padding-top:10px;">
+                                    <div>
+                                        <table id="example" class="table table-striped table-list cellspacing=" 0">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>3D Design </th>
+                                                    <th>Modern World History</th>
+                                                    <th>Biology</th>
+                                                    <th>Chemistry</th>
+                                                    <th>Algebra</th>
+                                                    <th>English</th>
+                                                    <th>Art</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1Qtr</td>
+                                                    <td>B</td>
+                                                    <td>B</td>
+                                                    <td>A</td>
+                                                    <td>A</td>
+                                                    <td>A+</td>
+                                                    <td>B</td>
+                                                    <td>B</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2Qtr</td>
+                                                    <td>A</td>
+                                                    <td>A+</td>
+                                                    <td>A+</td>
+                                                    <td>B</td>
+                                                    <td>B</td>
+                                                    <td>A</td>
+                                                    <td>A+</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>3Qtr</td>
+                                                    <td>A+</td>
+                                                    <td>A</td>
+                                                    <td>B</td>
+                                                    <td>B</td>
+                                                    <td>A</td>
+                                                    <td>A+</td>
+                                                    <td>A+</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div>
+                                <h3 class="header">Assignments</h3>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="active">
+                                        <a href="#PendingAssign" role="tab" data-toggle="tab">
+                                            Pending Assignments
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#SubAssign" role="tab" data-toggle="tab">
+                                            Submitted Assignments
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content bottem-border" style="display:inline-block">
+                                    <div class="tab-pane fade active in" id="PendingAssign">
+                                        <div>
+                                            <img class="img-bottem" src="images/previous-next.png" /><span class="date">March 05, 2015 </span>
+                                            <table id="example" class="table table-striped table-list" style="margin-top:5px">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Subject</th>
+                                                        <th>Due Date</th>
+                                                        <th>Additional Links</th>
+                                                        <th width="165">Download Assignments</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Three-Dimensional Design</td>
+                                                        <td>Mar 09, 2015    2:00PM</td>
+                                                        <td><a>Three-Dimensional Design IA P-5165</a></td>
+                                                        <td><span class="glyphicon glyphicon-download-alt"></span><a style="padding-left:10px">Download</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Chemistry</td>
+                                                        <td>Mar 06, 2015    9:45AM</td>
+                                                        <td><a>Chemistry A P-5866</a></td>
+                                                        <td><span class="glyphicon glyphicon-download-alt"></span><a style="padding-left:10px">Download</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Biology</td>
+                                                        <td>Mar 10, 2015    4:00PM</td>
+                                                        <td><a>Biology A P-6267</a></td>
+                                                        <td><span class="glyphicon glyphicon-download-alt"></span><a style="padding-left:10px">Download</a></td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                            <span class="pull-right" style="margin:5px 0">
+                                                <span style="margin-right:10px;">Upload Completed Assignments:</span>
+                                                <span class="glyphicon glyphicon-cloud-upload">
+                                                </span><a style="padding-left:10px">Upload</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade " id="SubAssign" style="padding-top:10px;">
+                                        <div>
+                                            <img class="img-bottem" src="images/previous-next.png" /><span class="date">March 05, 2015 </span>
+                                            <table id="example" class="table table-striped table-list" style="margin-top:5px">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Subject</th>
+                                                        <th>Date Submitted</th>
+                                                        <th>Additional Links</th>
+                                                        <th width="165">View Assignments</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td>Chemistry</td>
+                                                        <td>Mar 05, 2015    7:45PM</td>
+                                                        <td><a>Chemistry A P-5866</a></td>
+                                                        <td><a style="padding-left:10px">View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Biology</td>
+                                                        <td>Mar 9, 2015    9:00PM</td>
+                                                        <td><a>Biology A P-6267</a></td>
+                                                        <td><a style="padding-left:10px">View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Three-Dimensional Design</td>
+                                                        <td>Mar 09, 2015    7:15AM</td>
+                                                        <td><a>Three-Dimensional Design IA P-5165</a></td>
+                                                        <td><a style="padding-left:10px">View</a></td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                            <span class="pull-right" style="margin-top:5px">
+
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                        <h3 class="header" style="display:block; clear:both">School Calendar</h3>
+                        <div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 padding-0">
+                                <div style="margin-top: 10px;">
+                                    <img class="img-bottem" src="images/previous-next.png" /><span class="date">March 16, 2015 </span>
+                                    <div class="cal-type pull-right">
+                                        <button class="btn btn-normal">Day</button>
+                                        <button class="btn btn-normal">Work Week</button>
+                                        <button class="btn btn-normal">Week</button>
+                                        <button class="btn btn-primary">Month</button>
+                                    </div>
+                                </div>
+                                <table id="example" class="table table-striped calendar-table cellspacing=" 0">
+                                    <thead>
+                                        <tr>
+                                            <th>Mon</th>
+                                            <th>Tue</th>
+                                            <th>Wed</th>
+                                            <th>Thu</th>
+                                            <th>Fri</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>17</td>
+                                            <td class="td-note">18<span class="center-text">Fellowship Information Session</span></td>
+                                            <td>19</td>
+                                            <td>20</td>
+                                            <td>21</td>
+                                        </tr>
+                                        <tr>
+                                            <td>22</td>
+                                            <td>23</td>
+                                            <td>24</td>
+                                            <td class="td-note">25<span class="center-text">Session on Study Abroad Application Overview</span></td>
+                                            <td>30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>26</td>
+                                            <td>27 </td>
+                                            <td>28</td>
+                                            <td>29</td>
+                                            <td>30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>31</td>
+                                            <td>Apr 1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="NewsSec">
+                            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4 padding-0">
+                                <div>
+                                    <img src="images/Events.png" /><span class="events-header">Up Coming Events</span>
+
+                                    <div class="event">
+                                        <a class="event-link">Story Writing Contest</a><br />
+                                        <span class="event-des">Mar 22, 2015</span>
+                                        <p class="event-des">Invite for all the aspiring young literary wizards for a Story Writing Contest for the Grand Season 01. </p>
+                                    </div>
+                                    <div class="event">
+                                        <a class="event-link">Painting Contest</a><br />
+                                        <span class="event-des">April 12, 2015</span>
+                                        <p class="event-des">Painting Contest will be conducted for class-V to Class X </p>
+                                    </div>
+                                    <div class="event">
+                                        <a class="event-link">2-Day Summar Residential Camp</a><br />
+                                        <span class="event-des">April 25, 2015</span>
+                                        <p class="event-des">Contoso Summer School provides a fantastic location for an exciting summer school experience. The school is safe and secure with a mixture of historic</p>
+                                    </div>
+                                    <a class="event-link">More<img class="img-bottem" src="images/right-triangle.png" /></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4 padding-0">
+                                <div>
+                                    <img src="images/Announcements.png" /><span class="events-header">Announcements</span>
+                                    <div class="event">
+                                        <a class="event-link">How to Beat Exam Stress?</a><br />
+                                        <span class="event-des">Mar 12, 2015</span>
+                                        <p class="event-des">Believe in yourself. If you prepare for the exams properly you should do fine, meaning that there is no need to worry excessively</p>
+                                    </div>
+                                    <div class="event">
+                                        <a class="event-link">Make a personalized study schedule</a><br />
+                                        <span class="event-des">Jan 01, 2015</span>
+                                        <p class="event-des">Contact Our Counsellors/Mentors To Make A Personalized Study Schedule</p>
+                                    </div>
+                                    <div class="event">
+                                        <a class="event-link">International Curriculum</a><br />
+                                        <span class="event-des">Mar 01, 2015</span>
+                                        <p class="event-des">Contoso is rated as top International Curriculum School by School Survey done in 2014</p>
+                                    </div>
+                                    <a class="event-link">More<img class="img-bottem" src="images/right-triangle.png" /></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4 padding-0">
+                                <div>
+                                    <img src="images/news.png" /><span class="events-header">News</span>
+                                    <div class="event">
+                                        <a class="event-link">Is Your First Grader College Ready?</a><br />
+                                        <span class="event-des">Mar 03, 2015</span>
+                                        <p class="event-des">Mock applications at age 6, campus tours at 10. More and more elementary schools are introducing college awareness.</p>
+                                    </div>
+                                    <div class="event">
+                                        <a class="event-link">When to Take the SAT</a><br />
+                                        <span class="event-des">Mar 03, 2015</span>
+                                        <p class="event-des">Middle school students may be taking college admissions tests, but experts suggest that later is better.</p>
+                                    </div>
+                                    <div class="event">
+                                        <a class="event-link">A Gender-Neutral Glossary</a><br />
+                                        <span class="event-des">Mar03, 2015</span>
+                                        <p class="event-des">Students are developing an evolving vocabulary for gender and identity. Here’s a sampling.</p>
+                                    </div>
+                                    <a class="event-link">More<img class="img-bottem" src="images/right-triangle.png" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--reght section-->
+                    <div class="col-lg-3 col-sm-3 col-md-3 col-xs-3 search-top">
+                        <div class="search-border">
+                            <div class="input-group stylish-input-group ">
+                                <input type="text" class="form-control" placeholder="Search" style="height:28px">
+                                <span class="input-group-addon" style="padding: 4px 12px;">
+                                    <button type="submit">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+                            <div style="margin-top:5px; margin-left: 2px;">
+                                <span class="tab-header">FAVORITES</span>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade in active row" id="home">
+                                        <div class="list-group">
+                                            <div class="list-group-item tab-users">
+                                                <div class="row tab-items">
+                                                    <div>
+                                                        <img src="images/user-icon_online.jpg">
+                                                    </div>
+                                                    <div class="tab-containt">
+                                                        <a href="#openModal" class="ancor">David Bayon</a><br>
+                                                        <span class="text-muted">Available</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row tab-items">
+                                                    <div>
+                                                        <img src="images/user-icon_busy.jpg">
+                                                    </div>
+                                                    <div class="tab-containt">
+                                                        <a href="#openModal1" class="ancor">Marcel Barjavel</a><br>
+                                                        <span class="text-muted">In a meeting</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row tab-items">
+                                                    <div>
+                                                        <img src="images/user-icon_away.jpg">
+                                                    </div>
+                                                    <div class="tab-containt">
+                                                        <a href="#openModal2" class="ancor">Alaine Gousse</a><br>
+                                                        <span class="text-muted">Away 10 mins</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-top:20px">
+                            <strong class="link-header">Quick Links</strong><br />
+                            <span class="arrow-i"></span> <a class="link-containt">My Resources</a><br>
+                            <span class="arrow-i"></span> <a class="link-containt">My School</a><br>
+                            <span class="arrow-i"></span> <a class="link-containt">Total Resources</a><br>
+                            <span class="downarrow-i"></span> <a class="link-containt">Learning Links</a><br>
+                            <span class="sub-link subarrow-i"></span> <a class="link-containt">Math</a><br>
+                            <span class="sub-link subarrow-i"></span> <a class="link-containt">English Language Arts</a><br>
+                            <span class="sub-link subarrow-i"></span> <a class="link-containt">Science</a><br>
+                            <span class="arrow-i"></span> <a class="link-containt">Clubs</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div id="openModal" class="modalDialog">
+                <div class="bg-model">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <textarea class="textarea-box" cols="25" rows="5"></textarea>
+
+                </div>
+            </div>
+            <div id="openModal1" class="modalDialog">
+                <div class="bg-model1">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <textarea class="textarea-box" cols="25" rows="5"></textarea>
+
+                </div>
+            </div>
+            <div id="openModal2" class="modalDialog">
+                <div class="bg-model2">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <textarea class="textarea-box" cols="25" rows="5"></textarea>
+
+                </div>
+            </div>
+
+        </div>
+    <footer class="footer" style="margin-top:10px">
+        <div class="container footer-bg">
+            <p class="text-muted text-center">@ 2015 Contoso</p>
+        </div>
+    </footer>
+   
+</body>
+</html>

@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" charset="utf-8" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/custom.js"></script>
+    <title>Principal</title>
+</head>
+<body>
+    <div class="container padding">
+        <!--Navgation Bar-->
+        <nav class="navbar navbar-default border" role="navigation">
+            <div class="container nav-bg">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/Logo.png" /></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav nav-item">
+                        <li><a href="Index.html">School</a></li>
+                        <li><a onclick="loadcollaboration()">Collaboration</a></li>
+                        <li><a href="Principal.html">Principal</a></li>
+
+                    </ul>
+                    <ul class="nav navbar-nav nav-right pull-right">
+                    
+                        <li><a href="#"><img src="images/Cell.png" /></a></li>
+                        <li class="nav-items">
+                            <a href="#"><img src="images/allert.png" /><span class="badge bage-color alerts">2</span></a>
+                            <ul class="dropdown-menu" style="border:0px!important">
+                                <li>
+                                    <div>
+                                        <span style="display:inline-block; font-size:16px; padding-left:18px; padding-top:10px;">Notifications</span>
+                                    </div>
+                                    <hr>
+                                </li>
+                               
+                                <li>
+                                    <a href="#">
+                                        <div class="alt">
+                                            
+                                            <div style="display:inline-block; padding-left:10px">
+                                                <span class="alertHead">Steering committee meeting!</span><br />
+                                                <span>Steering committee meeting got postponed to Friday</span><br />
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="alt">
+                                            
+                                            <div style="display:inline-block; padding-left:10px">
+                                                <span class="alertHead">Campus Visit</span><br />
+                                                <span>Foreign Education Embassy Visit this week</span><br />
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a style="display:inline-block; font-size:16px; padding:18px;">See all</a>
+                                    </div>
+                                </li>
+                                
+                                
+
+                            </ul>
+
+                        </li>
+                        <li class="nav-items">
+                            <a href="#"><img src="images/mail.png" /><span class="badge bage-color alerts">3</span></a>
+                            <ul class="dropdown-menu" style="border:0px!important">
+                                <li>
+                                    <a href="#">
+                                        <div class="alt">
+                                            <img src="images/allert4.png" height="50" width="50" />
+                                            <div style="display:inline-block; padding-left:10px">
+                                                <span class="alertHead">David Wickham</span><br />
+                                                <span>Inefficient: inconsistent content coverage; </span><br />
+                                                <span>10.45am</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="alt">
+                                            <img src="images/allert5.png" height="50" width="50" />
+                                            <div style="display:inline-block; padding-left:10px">
+                                                <span class="alertHead">Ashley Goolsby</span><br />
+                                                <span>Feeling little or no control over the exam situation </span><br />
+                                                <span>9.30am</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="alt">
+                                            <img src="images/allert6.png" height="50" width="50" />
+                                            <div style="display:inline-block; padding-left:10px">
+                                                <span class="alertHead">Melvin Dionne</span><br />
+                                                <span>Believe in yourself. If you prepare for the exams...</span><br />
+                                                <span>9.00am</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+
+                            </ul>
+                        </li>
+                        <li><img class="User-i" src="images/principal.png" /></li>
+
+                        <li class="dropdown nav-items" style="margin-top: 15px;">
+                            <span class="welcome-text">Welcome</span>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-top:0px" aria-expanded="false">Scoot Poling <b class="caret"></b></a>
+
+                            <ul class="dropdown-menu" style="border:0px!important">
+                                <li>
+                                    <a href="#"><i class="fa fa-fw fa-paint-brush"></i>Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-fw fa-shopping-cart"></i>Settings</a>
+                                </li>
+                                <li id="logout">
+                                    <a href="#"><i class="fa fa-fw fa-shopping-cart"></i>Log Out</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <script type="text/javascript">
+            document.getElementById("logout").onclick = function () {
+                location.href = "Index.html";
+            };
+        </script>
+
+        <!--left section-->
+        <div class="col-lg-2 col-sm-2 col-md-2 col-xs-2 left-bg leftNav">
+            <div class="row">
+                <ul class="nav row-margin">
+                    <li class="li-border">
+                        <a class="nav-a" href="#"><img src="images/dashboard.png" /> <span class="nav-label nav-label-margin">Dashboards</span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a class="label-margin nav-a" href="#">- Schedules</a></li>
+                            <li><a class="label-margin nav-a" href="#">- Events</a></li>
+                            <li><a class="label-margin nav-a" href="#">- Announcements</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="li-border li-height">
+                        <a class="nav-a" href="#"><img class="img-center" src="images/mail-orenge.png" /> <span class="nav-label nav-label-margin">Mail box</span></a>
+                    </li>
+                    <li class="li-border li-height">
+                        <a class="nav-a" href="#"><img class="img-center" src="images/Cake.png" style="padding-bottom:7px" /> <span class="nav-label nav-label-margin">Birthdays</span></a>
+                    </li>
+                    <li class="li-border li-height">
+                        <a class="nav-a" href="#"><img class="img-center" src="images/schoolDir.png" style="padding-bottom:7px" /> <span class="nav-label nav-label-margin">School Directory
+</span></a>
+                    </li>
+                    <li class="li-border li-height">
+                        <a class="nav-a" href="#"><img class="img-center" src="images/districtDir.png" style="padding-bottom:7px" /> <span class="nav-label nav-label-margin">District Directory
+</span></a>
+                    </li>
+                    <li class="li-border li-height">
+                        <a class="nav-a" href="#"><img class="img-center" src="images/feedback.png" style="padding-bottom:7px" /> <span class="nav-label nav-label-margin">Feedback
+</span></a>
+                    </li>
+                    <li class="li-border li-height">
+                        <a class="nav-a" href="#"><img class="img-center" src="images/userGuide.png" style="padding-bottom:7px" /> <span class="nav-label nav-label-margin">User Guide
+</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!--main contain section-->
+        <div class="r-bg-adj clearfix">
+            <div class="col-lg-10 col-sm-10 col-md-10 col-xs-10">
+                <div class="row">
+                    <div class="search-bar">
+                        <div class="col-lg-7 col-sm-7 col-md-7 col-xs-7 nav-li">
+                            <img src="images/home.png" /><a>Home</a><img class="center-img" src="images/arrow.png" /><a>Principal</a>
+                        </div>
+                        <div class="col-lg-5 col-sm-5 col-md-5 col-xs-5 pull-right" style="padding-top:3px">
+                            <div class="input-group stylish-input-group ">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <span class="input-group-addon">
+                                    <button type="submit">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--middle section-->
+                    <div class="col-lg-9 col-sm-9 col-md-9 col-xs-9">
+                        <h3 class="header">Principal Dashboard</h3>
+                        <div class="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a href="#Attendance" data-toggle="tab">
+                                        Attendance
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#Facilities" data-toggle="tab">
+                                        Facilities Information
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#Student" data-toggle="tab">
+                                        Student Performance
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content bottem-border" style="padding: 1px;">
+                                <div class="tab-pane active" id="Attendance">
+                                    <div class="width100per" style="display:inline-block">
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <h3 class="tabpanel-subtitle row"><span style="color:#666">Student Attendance Summary:</span><span style="font-weight:600"> Today</span> </h3>
+                                            <div class="student-tab row">
+                                                <img class="chart" src="images/pie-chart.png" />
+                                                <div class="inline">
+                                                    <h4>Total Student: 2000</h4>
+                                                    <img class="center-img" src="images/green-rect.png" /><span>Present</span><br />
+                                                    <img class="center-img" src="images/orenge-rect.png" /><span>Absent</span><br />
+                                                    <img class="center-img" src="images/red-rect.png" /><span>On Field</span><br />
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <h3 class="tabpanel-subtitle row"><span style="color:#666">Student Attendance Summary:</span><span style="font-weight:600"> Year to Date</span> </h3>
+                                            <div class="student-tab row">
+                                                <img class="chart" src="images/pie-chart_ytd.png" />
+                                                <div class="inline">
+                                                    <h4>Total Student: 2000</h4>
+                                                    <img class="center-img" src="images/green-rect.png" /><span>Present</span><br />
+                                                    <img class="center-img" src="images/orenge-rect.png" /><span>Absent</span><br />
+                                                    <img class="center-img" src="images/red-rect.png" /><span>On Field</span><br />
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <hr style="margin:0" class="dash-line" />
+                                    <div class="clearBoth">
+                                        <h3 class="tabpanel-subtitle" style="padding:0px">Absent Teachers:<span class="badge bage-color">5</span></h3>
+
+                                        <table id="example" class="table table-striped table-list">
+                                            <thead>
+                                                <tr>
+                                                    <th>Absent Teacher</th>
+                                                    <th>Substitute Teacher</th>
+                                                    <th>Subject</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Melena Mary</td>
+                                                    <td>Alan Mendis</td>
+                                                    <td>Modern World History</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jack Buckner</td>
+                                                    <td>Richard Francis</td>
+                                                    <td>Algebra</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ricky Archer</td>
+                                                    <td>Julian Pointing</td>
+                                                    <td>Algebra</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Shirlene D’Souza</td>
+                                                    <td>Anjelina Jane</td>
+                                                    <td>Physics</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Camilla Cardoze</td>
+                                                    <td>Argon Daire</td>
+                                                    <td>Chemistry</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="tab-pane row" id="Student">
+                                    <div class="student-tab">
+
+                                        <div style="padding-top: 30px;">
+                                            <span>Find a student</span>
+                                            <input type="text" class="form-text text-box" id="search" style="padding:5px" placeholder="Enter Student Name">
+                                            <button class="btn btn-primary btn-find" onclick="myFunction()">Find</button>
+                                        </div>
+                                        <div class="hr-or">
+
+                                        </div>
+                                        <h4 class="hr-or-h4">OR</h4>
+                                        <span>Class</span>
+                                        <select class="dropdown-select">
+                                            <option value="V">I</option>
+                                            <option value="VI">II</option>
+                                            <option value="VII">III</option>
+                                            <option value="VIII">IV</option>
+                                            <option value="V">V</option>
+                                            <option value="VI">VI</option>
+                                            <option value="VII">VII</option>
+                                            <option value="VIII">VIII</option>
+                                            <option value="VIII">IX</option>
+                                            <option value="VIII">X</option>
+                                        </select>
+                                        <span style="margin-left:25px">Section</span>
+                                        <select class="dropdown-select">
+                                            <option value="A">A</option>
+                                            <option value="B">B</option>
+                                            <option value="C">C</option>
+                                            <option value="A">D</option>
+                                            <option value="B">E</option>
+                                            <option value="C">F</option>
+                                        </select>
+                                        <button class="btn btn-primary btn-find" onclick="myFunction1()">Find</button>
+
+
+
+                                        <div id="result" style="margin-top:35px; display:none;">
+                                            <span class="tabpanel-subtitle" style="padding-left:0px">Result</span>
+                                            <hr style="margin:10px 0px" />
+                                            <a class="div-display" onclick="showResult()">
+                                                <img src="images/Kid1.png" />
+                                                <span class="text-display">Dona Garrett</span>
+                                                <span class="text-display">Class:  X</span>
+                                                <span class="text-display">Section: A</span>
+                                            </a>
+                                            <a class="div-display" >
+                                                <img src="images/student1.png" />
+                                                <span class="text-display">Jessica Alston</span>
+                                                <span class="text-display">Class:  IV</span>
+                                                <span class="text-display">Section: C</span>
+                                            </a>
+                                            <a class="div-display" >
+                                                <img src="images/Kid2.png" />
+                                                <span class="text-display">Christie Wyatt </span>
+                                                <span class="text-display">Class:  I</span>
+                                                <span class="text-display">Section: B</span>
+                                            </a>
+                                        </div>
+
+                                        <div id="Result1" style="display:none">
+                                            <hr />
+                                            <div style="margin:20px 0px;">
+                                                <img src="images/Kid1.png" />
+                                                <div class="div-display">
+                                                    <span class="text-display">Dona Garrett</span>
+                                                    <span class="text-display">(Class:  X; Section: A)</span>
+                                                </div>
+
+                                            </div>
+                                            <ul class="nav nav-tabs">
+                                                <li class="active">
+                                                    <a href="#AssignmentGrade" data-toggle="tab">
+                                                        Assignment Grade
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#ClassAbsence" data-toggle="tab">
+                                                        Class Absence
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                            <div class="tab-content bottem-border" style="margin-bottom:10px">
+                                                <div id="AssignmentGrade" class="tab-pane active" style="padding:10px 12px">
+                                                    <table id="example" class="table table-striped table-list">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Formative (40%)</th>
+                                                                <th>HW for Prep (20%)</th>
+                                                                <th>Summative (40%)</th>
+                                                                <th>Current Grade</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="">
+                                                                    <span class="text-display text-bold">Three-Dimensional Design</span>
+                                                                    <span>285.0/290.0   93.3%</span>
+                                                                </td>
+                                                                <td>155.0/155.0   100%</td>
+                                                                <td>155.0/155.0   100%</td>
+                                                                <td>96.8   A+</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">
+                                                                    <span class="text-display text-bold">Chemistry</span>
+                                                                    <span>265.0/290.0   89.3%</span>
+                                                                </td>
+                                                                <td>135.0/155.0   92%</td>
+                                                                <td>145.0/155.0   95%</td>
+                                                                <td>93.4  A</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">
+                                                                    <span class="text-display text-bold">Algebra</span>
+                                                                    <span>280.0/290.0   95%</span>
+                                                                </td>
+                                                                <td>125.0/155.0   87%</td>
+                                                                <td>155.0/155.0   100%</td>
+                                                                <td>94.4   A</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">
+                                                                    <span class="text-display text-bold">Modern World History</span>
+                                                                    <span>255.0/290.0   85%</span>
+                                                                </td>
+                                                                <td>150.0/155.0   96.7%</td>
+                                                                <td>152.0/155.0   97.2%</td>
+                                                                <td>96.9   A+</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">
+                                                                    <span class="text-display text-bold">Biology</span>
+                                                                    <span>275.0/290.0   92.1%</span>
+                                                                </td>
+                                                                <td>150.0/155.0   96.7%</td>
+                                                                <td>125.0/155.0   87%</td>
+                                                                <td>92.6   A</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="">
+                                                                    <span class="text-display text-bold">Algebra</span>
+                                                                    <span>280.0/290.0   92%</span>
+                                                                </td>
+                                                                <td>125.0/155.0   87%</td>
+                                                                <td>155.0/155.0   100%</td>
+                                                                <td>94.4   A</td>
+                                                            <tr>
+                                                                <td class="">
+                                                                    <span class="text-display text-bold">English</span>
+                                                                    <span>278.0/290.0   90.3%</span>
+                                                                </td>
+                                                                <td>145.0/155.0   95%</td>
+                                                                <td>155.0/155.0   100%</td>
+                                                                <td>93.8   A</td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div id="ClassAbsence" class="tab-pane row" style="padding:12px">
+                                                    <div class="col-lg-6 col-md-12 ">
+                                                        <table id="example" class="table table-striped table-list">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Period</th>
+                                                                    <th>Course</th>
+                                                                    <th>Date</th>
+                                                                    <th>AbsenceCode</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>BIOLOGY</td>
+                                                                    <td>12/08</td>
+                                                                    <td>ILL</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>ALGEBRA</td>
+                                                                    <td>12/15</td>
+                                                                    <td>AB</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4</td>
+                                                                    <td>ART</td>
+                                                                    <td>01/05</td>
+                                                                    <td>UABS</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>CHEMISTRY</td>
+                                                                    <td>01/11</td>
+                                                                    <td>UPRT</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>All</td>
+                                                                    <td>All Subjects</td>
+                                                                    <td>01/16</td>
+                                                                    <td>ILL</td>
+                                                                </tr>
+
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-12">
+                                                        <table id="example" class="table table-striped table-list">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>AbsenceCode</th>
+                                                                    <th>Description</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>ILL</td>
+                                                                    <td>Illness include med appt</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>AB</td>
+                                                                    <td>Absent Unexcused</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>UABS</td>
+                                                                    <td>Unex Parent Approved-Not Travel</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>UPRT</td>
+                                                                    <td>Unexcused Late</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>UTDY</td>
+                                                                    <td>Tardy – Unexcused</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>UTRU</td>
+                                                                    <td>Truant</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>UTRV</td>
+                                                                    <td>Unexcused Absent-Travel</td>
+                                                                </tr>
+
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane " id="Facilities">
+                                    <table id="example" class="table table-striped table-list top-margin">
+                                        <thead>
+                                            <tr>
+                                                <th>Request</th>
+                                                <th>Date</th>
+                                                <th>Approve / Reject</th>
+                                                <th>Comments</th>
+                                                <th>Select</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="" width="175px">Auditorium booking for parent teacher meeting</td>
+                                                <td>25/03/2015</td>
+                                                <td><input type="radio" name="Status">Approve <input type="radio" name="Status">Reject</td>
+
+                                                <td></td>
+                                                <td><input type="checkbox" /></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="">Botanical Research Institute of Texas visit for high school students</td>
+                                                <td>05/04/2015</td>
+                                                <td><input type="radio" name="Status1" value="male">Approve <input type="radio" name="Status1" value="female">Reject</td>
+
+                                                <td></td>
+                                                <td><input type="checkbox" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="">Request for Galvanometers 20nos.</td>
+                                                <td>- - -</td>
+                                                <td><input type="radio" name="Status2" value="male" checked>Approve <input type="radio" name="Status2" value="female">Reject</td>
+                                                <td>Please order only 5 units for now.</td>
+                                                <td><input type="checkbox" /></td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="pull-right" style="margin-top:15px">
+                                        <button class="btn btn-success">Submit</button>
+                                        <button class="btn">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <h3 class="header">Student Risk Factors</h3>
+                        <div class="tabpanel">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a href="#District" data-toggle="tab">
+                                        District Summary
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#Ethnicity" data-toggle="tab">
+                                        Ethnicity Summary
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#Grade" data-toggle="tab">
+                                        Grade Level Summary
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content bottem-border" style="padding: 1px;">
+                                <div class="tab-pane active" id="District">
+                                    <div class="pull-right bar-colors">
+                                        <div class="inlines">
+                                            <span class="insufficient insufficient-bar"></span>
+                                            <span class="insufficient-title">Insufficient Data</span>
+                                        </div>
+                                        <div class="inlines">
+                                            <span class="high-risk insufficient-bar"></span>
+                                            <span class="insufficient-title">High Risk</span>
+                                        </div>
+                                        <div class="inlines">
+                                            <span class="moderate insufficient-bar"></span>
+                                            <span class="insufficient-title">Moderate Risk</span>
+                                        </div>
+                                        <div class="inlines">
+                                            <span class="low-risk insufficient-bar"></span>
+                                            <span class="insufficient-title">Moderate Risk</span>
+                                        </div>
+                                    </div>
+                                    <div class="risk-bar">
+                                        <div>
+                                            <div style="min-width:20%; display:inline-block; vertical-align:top;">Marking Period 4</div>
+                                            <div style="width:77%;display:inline-block">
+                                                <span class="insufficient" style="width:1%">1</span>
+                                                <span class="high-risk" style="width:18%">18</span>
+                                                <span class="moderate" style="width:32%">32</span>
+                                                <span class="low-risk" style="width:49%">49</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div style="min-width:20%; display:inline-block; vertical-align:top;">Marking Period 1</div>
+                                            <div style="width:77%;display:inline-block">
+                                                <span class="insufficient" style="width:2%">2</span>
+                                                <span class="high-risk" style="width:15%">15</span>
+                                                <span class="moderate" style="width:28%">28</span>
+                                                <span class="low-risk" style="width:55%">55</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="Ethnicity">
+                                    <div class="pull-right bar-colors">
+                                        <div class="inlines">
+                                            <span class="insufficient insufficient-bar"></span>
+                                            <span class="insufficient-title">Insufficient Data</span>
+                                        </div>
+                                        <div class="inlines">
+                                            <span class="high-risk insufficient-bar"></span>
+                                            <span class="insufficient-title">High Risk</span>
+                                        </div>
+                                        <div class="inlines">
+                                            <span class="moderate insufficient-bar"></span>
+                                            <span class="insufficient-title">Moderate Risk</span>
+                                        </div>
+                                        <div class="inlines">
+                                            <span class="low-risk insufficient-bar"></span>
+                                            <span class="insufficient-title">Moderate Risk</span>
+                                        </div>
+                                    </div>
+                                    <div class="risk-bar">
+                                        <table class="table  table-list">
+                                            <tr>
+                                                <td style="width:30px">
+                                                    <img src="images/risk1.png" />
+                                                </td>
+                                                <td>
+                                                    <div class="bar-height">
+                                                        <div>
+                                                            <div style="min-width:20%; display:inline-block; vertical-align:super;">Marking Period 4</div>
+                                                            <div style="width:77%;display:inline-block">
+                                                                <span class="insufficient" style="width:1%">1</span>
+                                                                <span class="high-risk" style="width:7%">7</span>
+                                                                <span class="moderate" style="width:29%">29</span>
+                                                                <span class="low-risk" style="width:63%">63</span>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div style="min-width:20%; display:inline-block; vertical-align:super;">Marking Period 1</div>
+                                                            <div style="width:77%;display:inline-block">
+                                                                <span class="insufficient" style="width:1%">1</span>
+                                                                <span class="high-risk" style="width:6%">6</span>
+                                                                <span class="moderate" style="width:22%">22</span>
+                                                                <span class="low-risk" style="width:71%">71</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:30px">
+                                                    <img src="images/sideLabel2.png" />
+                                                </td>
+                                                <td>
+                                                    <div class="bar-height">
+                                                        <div>
+                                                            <div style="min-width:20%; display:inline-block; vertical-align:top;">Marking Period 4</div>
+                                                            <div style="width:77%;display:inline-block">
+                                                                <span class="insufficient" style="width:1%">1</span>
+                                                                <span class="high-risk" style="width:12%">12</span>
+                                                                <span class="moderate" style="width:29%">29</span>
+                                                                <span class="low-risk" style="width:58%">58</span>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div style="min-width:20%; display:inline-block; vertical-align:top;">Marking Period 1</div>
+                                                            <div style="width:77%;display:inline-block">
+                                                                <span class="insufficient" style="width:1%">1</span>
+                                                                <span class="high-risk" style="width:8%">8</span>
+                                                                <span class="moderate" style="width:25%">25</span>
+                                                                <span class="low-risk" style="width:66%">66</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:30px">
+                                                    <img src="images/sideLabel3.png" />
+                                                </td>
+                                                <td>
+                                                    <div class="bar-height">
+                                                        <div>
+                                                            <div style="min-width:20%; display:inline-block; vertical-align:top;">Marking Period 4</div>
+                                                            <div style="width:77%;display:inline-block">
+                                                                <span class="insufficient" style="width:0%"></span>
+                                                                <span class="high-risk" style="width:9%">9</span>
+                                                                <span class="moderate" style="width:0%"></span>
+                                                                <span class="low-risk" style="width:91%">91</span>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div style="min-width:20%; display:inline-block; vertical-align:top;">Marking Period 1</div>
+                                                            <div style="width:77%;display:inline-block">
+                                                                <span class="insufficient" style="width:9%">9</span>
+                                                                <span class="high-risk" style="width:0%"></span>
+                                                                <span class="moderate" style="width:18%">18</span>
+                                                                <span class="low-risk" style="width:73%">73</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:30px">
+                                                    <img src="images/sideLabel4.png" />
+                                                </td>
+                                                <td>
+                                                    <div class="bar-height">
+                                                        <div>
+                                                            <div style="min-width:20%; display:inline-block; vertical-align:top;">Marking Period 4</div>
+                                                            <div style="width:77%;display:inline-block">
+                                                                <span class="insufficient" style="width:2%">2</span>
+                                                                <span class="high-risk" style="width:31%">31</span>
+                                                                <span class="moderate" style="width:39%">39</span>
+                                                                <span class="low-risk" style="width:28%">28</span>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div style="min-width:20%; display:inline-block; vertical-align:top;">Marking Period 1</div>
+                                                            <div style="width:77%;display:inline-block">
+                                                                <span class="insufficient" style="width:2%">2</span>
+                                                                <span class="high-risk" style="width:27%">27</span>
+                                                                <span class="moderate" style="width:37%">37</span>
+                                                                <span class="low-risk" style="width:34%">34</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:30px">
+                                                    <img src="images/sideLabel5.png" />
+                                                </td>
+                                                <td>
+                                                    <div class="bar-height">
+                                                        <div>
+                                                            <div style="min-width:20%; display:inline-block; vertical-align:super;">Marking Period 4</div>
+                                                            <div style="width:77%;display:inline-block">
+                                                                <span class="insufficient" style="width:1%">1</span>
+                                                                <span class="high-risk" style="width:27%">27</span>
+                                                                <span class="moderate" style="width:35%">35</span>
+                                                                <span class="low-risk" style="width:37%">37</span>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div style="min-width:20%; display:inline-block; vertical-align:super;">Marking Period 1</div>
+                                                            <div style="width:77%;display:inline-block">
+                                                                <span class="insufficient" style="width:2%">2</span>
+                                                                <span class="high-risk" style="width:23%">23</span>
+                                                                <span class="moderate" style="width:33%">33</span>
+                                                                <span class="low-risk" style="width:42%">42</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:30px">
+                                                    <img src="images/sideLabel6.png" />
+                                                </td>
+                                                <td>
+                                                    <div class="bar-height">
+                                                        <div>
+                                                            <div style="min-width:20%; display:inline-block; vertical-align:super;">Marking Period 4</div>
+                                                            <div style="width:77%;display:inline-block">
+                                                                <span class="insufficient" style="width:1%">1</span>
+                                                                <span class="high-risk" style="width:6%">6</span>
+                                                                <span class="moderate" style="width:23%">23</span>
+                                                                <span class="low-risk" style="width:70%">70</span>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div style="min-width:20%; display:inline-block; vertical-align:super;">Marking Period 1</div>
+                                                            <div style="width:77%;display:inline-block">
+                                                                <span class="insufficient" style="width:2%">2</span>
+                                                                <span class="high-risk" style="width:5%">5</span>
+                                                                <span class="moderate" style="width:18%">18</span>
+                                                                <span class="low-risk" style="width:75%">75</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:30px">
+                                                    <img src="images/sideLabel7.png" />
+                                                </td>
+                                                <td>
+                                                    <div class="bar-height">
+                                                        <div>
+                                                            <div style="min-width:20%; display:inline-block; vertical-align:super;">Marking Period 4</div>
+                                                            <div style="width:77%;display:inline-block">
+                                                                <span class="insufficient" style="width:0%"></span>
+                                                                <span class="high-risk" style="width:21%">21</span>
+                                                                <span class="moderate" style="width:36%">36</span>
+                                                                <span class="low-risk" style="width:43%">43</span>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div style="min-width:20%; display:inline-block; vertical-align:super;">Marking Period 1</div>
+                                                            <div style="width:77%;display:inline-block">
+                                                                <span class="insufficient" style="width:0%">0</span>
+                                                                <span class="high-risk" style="width:20%">20</span>
+                                                                <span class="moderate" style="width:36%">36</span>
+                                                                <span class="low-risk" style="width:44%">44</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+
+
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane " id="Grade">
+                                    <div class="pull-right bar-colors">
+                                        <div class="inlines">
+                                            <span class="insufficient insufficient-bar"></span>
+                                            <span class="insufficient-title">Insufficient Data</span>
+                                        </div>
+                                        <div class="inlines">
+                                            <span class="high-risk insufficient-bar"></span>
+                                            <span class="insufficient-title">High Risk</span>
+                                        </div>
+                                        <div class="inlines">
+                                            <span class="moderate insufficient-bar"></span>
+                                            <span class="insufficient-title">Moderate Risk</span>
+                                        </div>
+                                        <div class="inlines">
+                                            <span class="low-risk insufficient-bar"></span>
+                                            <span class="insufficient-title">Moderate Risk</span>
+                                        </div>
+                                    </div>
+                                    <div class="risk-bar">
+                                        <table class="table  table-list">
+                                            <tr>
+                                                <td style="width:30px">
+                                                    <img src="images/sideLabel8.png" />
+                                                </td>
+                                                <td>
+                                                    <div class="bar-height">
+                                                        <div>
+                                                            <div style="min-width:20%; display:inline-block; vertical-align:top;">Marking Period 4</div>
+                                                            <div style="width:77%;display:inline-block">
+                                                                <span class="insufficient" style="width:1%">1</span>
+                                                                <span class="high-risk" style="width:17%">17</span>
+                                                                <span class="moderate" style="width:34%">34</span>
+                                                                <span class="low-risk" style="width:48%">48</span>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div style="min-width:20%; display:inline-block; vertical-align:top;">Marking Period 1</div>
+                                                            <div style="width:77%;display:inline-block">
+                                                                <span class="insufficient" style="width:2%">2</span>
+                                                                <span class="high-risk" style="width:13%">13</span>
+                                                                <span class="moderate" style="width:28%">28</span>
+                                                                <span class="low-risk" style="width:57%">57</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:30px">
+                                                    <img src="images/sideLabel9.png" />
+                                                </td>
+                                                <td>
+                                                    <div class="bar-height">
+                                                        <div>
+                                                            <div style="min-width:20%; display:inline-block; vertical-align:top;">Marking Period 4</div>
+                                                            <div style="width:77%;display:inline-block">
+                                                                <span class="insufficient" style="width:1%">1</span>
+                                                                <span class="high-risk" style="width:16%">16</span>
+                                                                <span class="moderate" style="width:33%">33</span>
+                                                                <span class="low-risk" style="width:50%">50</span>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div style="min-width:20%; display:inline-block; vertical-align:top;">Marking Period 1</div>
+                                                            <div style="width:77%;display:inline-block">
+                                                                <span class="insufficient" style="width:2%">2</span>
+                                                                <span class="high-risk" style="width:14%">14</span>
+                                                                <span class="moderate" style="width:30%">30</span>
+                                                                <span class="low-risk" style="width:54%">54</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:30px">
+                                                    <img src="images/sideLabel10.png" />
+                                                </td>
+                                                <td>
+                                                    <div class="bar-height">
+                                                        <div>
+                                                            <div style="min-width:20%; display:inline-block; vertical-align:top;">Marking Period 4</div>
+                                                            <div style="width:77%;display:inline-block">
+                                                                <span class="insufficient" style="width:1%">1</span>
+                                                                <span class="high-risk" style="width:20%">20</span>
+                                                                <span class="moderate" style="width:29%">29</span>
+                                                                <span class="low-risk" style="width:50%">50</span>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div style="min-width:20%; display:inline-block; vertical-align:top;">Marking Period 1</div>
+                                                            <div style="width:77%;display:inline-block">
+                                                                <span class="insufficient" style="width:2%">2</span>
+                                                                <span class="high-risk" style="width:19%">19</span>
+                                                                <span class="moderate" style="width:24%">24</span>
+                                                                <span class="low-risk" style="width:55%">55</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div><h3 class="header" style="display:block; clear:both">School Calendar</h3></div>
+                        <div>
+                            <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 padding-0">
+                                <div style="margin-top: 10px;">
+                                    <img class="img-bottem" src="images/previous-next.png" /><span class="date">March 16, 2015 </span>
+                                    <div class="cal-type pull-right">
+                                        <button class="btn btn-normal">Day</button>
+                                        <button class="btn btn-normal">Work Week</button>
+                                        <button class="btn btn-normal">Week</button>
+                                        <button class="btn btn-primary">Month</button>
+                                    </div>
+                                </div>
+                                <table id="example" class="table table-striped calendar-table cellspacing=" 0">
+                                    <thead>
+                                        <tr>
+                                            <th>Mon</th>
+                                            <th>Tue</th>
+                                            <th>Wed</th>
+                                            <th>Thu</th>
+                                            <th>Fri</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>17</td>
+                                            <td class="td-note">18<span class="center-text">Fellowship Information Session</span></td>
+                                            <td>19</td>
+                                            <td>20</td>
+                                            <td>21</td>
+                                        </tr>
+                                        <tr>
+                                            <td>22</td>
+                                            <td>23</td>
+                                            <td>24</td>
+                                            <td class="td-note">25<span class="center-text">Session on Study Abroad Application Overview</span></td>
+                                            <td>30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>26</td>
+                                            <td>27 </td>
+                                            <td>28</td>
+                                            <td>29</td>
+                                            <td>30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>31</td>
+                                            <td>Apr 1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="NewsSec">
+                            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4 padding-0">
+                                <div>
+                                    <img src="images/Events.png" /><span class="events-header">Up Coming Events</span>
+
+                                    <div class="event">
+                                        <a class="event-link">Story Writing Contest</a><br />
+                                        <span class="event-des">Mar 22, 2015</span>
+                                        <p class="event-des">Invite for all the aspiring young literary wizards for a Story Writing Contest for the Grand Season 01. </p>
+                                    </div>
+                                    <div class="event">
+                                        <a class="event-link">Painting Contest</a><br />
+                                        <span class="event-des">April 12, 2015</span>
+                                        <p class="event-des">Painting Contest will be conducted for class-V to Class X </p>
+                                    </div>
+                                    <div class="event">
+                                        <a class="event-link">2-Day Summar Residential Camp</a><br />
+                                        <span class="event-des">April 25, 2015</span>
+                                        <p class="event-des">Contoso Summer School provides a fantastic location for an exciting summer school experience. The school is safe and secure with a mixture of historic</p>
+                                    </div>
+                                    <a class="event-link">More<img class="img-bottem" src="images/right-triangle.png" /></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4 padding-0">
+                                <div>
+                                    <img src="images/Announcements.png" /><span class="events-header">Announcements</span>
+                                    <div class="event">
+                                        <a class="event-link">How to Beat Exam Stress?</a><br />
+                                        <span class="event-des">Mar 12, 2015</span>
+                                        <p class="event-des">Believe in yourself. If you prepare for the exams properly you should do fine, meaning that there is no need to worry excessively</p>
+                                    </div>
+                                    <div class="event">
+                                        <a class="event-link">Make a personalized study schedule</a><br />
+                                        <span class="event-des">Jan 01, 2015</span>
+                                        <p class="event-des">Contact Our Counsellors/Mentors To Make A Personalized Study Schedule</p>
+                                    </div>
+                                    <div class="event">
+                                        <a class="event-link">International Curriculum</a><br />
+                                        <span class="event-des">Mar 01, 2015</span>
+                                        <p class="event-des">Contoso is rated as top International Curriculum School by School Survey done in 2014</p>
+                                    </div>
+                                    <a class="event-link">More<img class="img-bottem" src="images/right-triangle.png" /></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-4 col-md-4 col-xs-4 padding-0">
+                                <div>
+                                    <img src="images/news.png" /><span class="events-header">News</span>
+                                    <div class="event">
+                                        <a class="event-link">Is Your First Grader College Ready?</a><br />
+                                        <span class="event-des">Mar 03, 2015</span>
+                                        <p class="event-des">Mock applications at age 6, campus tours at 10. More and more elementary schools are introducing college awareness.</p>
+                                    </div>
+                                    <div class="event">
+                                        <a class="event-link">When to Take the SAT</a><br />
+                                        <span class="event-des">Mar 03, 2015</span>
+                                        <p class="event-des">Middle school students may be taking college admissions tests, but experts suggest that later is better.</p>
+                                    </div>
+                                    <div class="event">
+                                        <a class="event-link">A Gender-Neutral Glossary</a><br />
+                                        <span class="event-des">Mar03, 2015</span>
+                                        <p class="event-des">Students are developing an evolving vocabulary for gender and identity. Here’s a sampling.</p>
+                                    </div>
+                                    <a class="event-link">More<img class="img-bottem" src="images/right-triangle.png" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--reght section-->
+                    <div class="col-lg-3 col-sm-3 col-md-3 col-xs-3 search-top">
+                        <div class="search-border">
+                            <div class="input-group stylish-input-group ">
+                                <input type="text" class="form-control" placeholder="Search" style="height:28px">
+                                <span class="input-group-addon" style="padding: 4px 12px;">
+                                    <button type="submit">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+                            <div style="margin-top:5px; margin-left: 2px;">
+                                <span class="tab-header">FAVORITES</span>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade in active row" id="home">
+                                        <div class="list-group">
+                                            <div class="list-group-item tab-users">
+                                                <div class="row tab-items">
+                                                    <div>
+                                                        <img src="images/user-icon_online.jpg">
+                                                    </div>
+                                                    <div class="tab-containt">
+                                                        <a href="#openModal" class="ancor">David Bayon</a><br>
+                                                        <span class="text-muted">Available</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row tab-items">
+                                                    <div>
+                                                        <img src="images/user-icon_busy.jpg">
+                                                    </div>
+                                                    <div class="tab-containt">
+                                                        <a href="#openModal1" class="ancor">Marcel Barjavel</a><br>
+                                                        <span class="text-muted">In a meeting</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row tab-items">
+                                                    <div>
+                                                        <img src="images/user-icon_away.jpg">
+                                                    </div>
+                                                    <div class="tab-containt">
+                                                        <a href="#openModal2" class="ancor">Alaine Gousse</a><br>
+                                                        <span class="text-muted">Away 10 mins</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-top:20px">
+                            <strong class="link-header">Quick Links</strong><br />
+                            <span class="arrow-i"></span> <a class="link-containt">My Resources</a><br>
+                            <span class="arrow-i"></span> <a class="link-containt">My School</a><br>
+                            <span class="arrow-i"></span> <a class="link-containt">Total Resources</a><br>
+                            <span class="arrow-i"></span> <a class="link-containt">
+                                District Reports
+                            </a><br>
+                            <span class="arrow-i"></span> <a class="link-containt">
+                                Principal Academy
+                            </a><br>
+                            <span class="arrow-i"></span> <a class="link-containt">
+                                School Board Notes
+                            </a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="openModal" class="modalDialog">
+            <div class="bg-model">
+                <a href="#close" title="Close" class="close">X</a>
+                <textarea class="textarea-box" cols="25" rows="5"></textarea>
+
+            </div>
+        </div>
+        <div id="openModal1" class="modalDialog">
+            <div class="bg-model1">
+                <a href="#close" title="Close" class="close">X</a>
+                <textarea class="textarea-box" cols="25" rows="5"></textarea>
+
+            </div>
+        </div>
+        <div id="openModal2" class="modalDialog">
+            <div class="bg-model2">
+                <a href="#close" title="Close" class="close">X</a>
+                <textarea class="textarea-box" cols="25" rows="5"></textarea>
+
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer" style="margin-top:10px">
+        <div class="container footer-bg">
+            <p class="text-muted text-center">@ 2015 Contoso</p>
+        </div>
+    </footer>
+    <!--Scripts-->
+    <script src="js/bootstrap.min.js"></script>s
+</body>
+</html>
